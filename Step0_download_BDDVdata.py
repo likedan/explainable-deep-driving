@@ -47,7 +47,7 @@ if __name__ == "__main__":
             5. Answer.1justification
         '''
         non_exist_vidNames    = []
-        for item in tqdm(examples):
+        for item in tqdm(examples, total=len(examples)):
 
             vidName  = item['Input.Video'].split("/")[-1][:-4]
 
